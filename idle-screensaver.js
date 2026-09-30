@@ -17,7 +17,6 @@ const SLIDE_INTERVAL_MS = 17000;  // how long each slide stays up (15s)
    ============================================================ */
 
 const SLIDES = [
-  { type: "image", src: "images/logos/9.png", alt: "College of Business logo" },
   { type: "image", src: "images/logos/3.png", alt: "College of Business logo" },
   { type: "image", src: "images/logos/4.png", alt: "College of Business logo" },
   { type: "image", src: "images/logos/1.png", alt: "College of Business logo" },
