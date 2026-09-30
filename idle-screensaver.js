@@ -21,7 +21,7 @@ const SLIDES = [
   { type: "image", src: "images/logos/3.png", alt: "College of Business logo" },
   { type: "image", src: "images/logos/4.png", alt: "College of Business logo" },
   { type: "image", src: "images/logos/1.png", alt: "College of Business logo" },
-  { type: "image", src: "images/logos/21.jpg", alt: "College of Business logo" },
+  { type: "image", src: "images/logos/ere.jpg", alt: "College of Business logo" },
   { type: "cta", title: "Tap a Tile to Get Started", sub: "Career Finder, Job Postings, Faculty, and more" }];
 
 /* ============================================================
