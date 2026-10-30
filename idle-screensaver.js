@@ -3,8 +3,8 @@
    Tweak these two numbers to change behavior.
    ============================================================ */
 
-const IDLE_TIMEOUT_MS = 20000;   // how long with no touch before it appears (25s)
-const SLIDE_INTERVAL_MS = 17000;  // how long each slide stays up (15s)
+const IDLE_TIMEOUT_MS = 25000;   // how long with no touch before it appears (25s)
+const SLIDE_INTERVAL_MS = 15000;  // how long each slide stays up (15s)
 
 /* ============================================================
    CONTENT BANK
@@ -17,9 +17,10 @@ const SLIDE_INTERVAL_MS = 17000;  // how long each slide stays up (15s)
    ============================================================ */
 
 const SLIDES = [
-  { type: "image", src: "images/logos/4.png", alt: "College of Business logo" },
+
+  { type: "image", src: "images/logos/23.png", alt: "College of Business logo" },
   { type: "image", src: "images/logos/1.png", alt: "College of Business logo" },
-  { type: "image", src: "images/logos/ere.png", alt: "College of Business logo" },
+  { type: "image", src: "images/logos/21.jpg", alt: "College of Business logo" },
   { type: "cta", title: "Tap a Tile to Get Started", sub: "Career Finder, Job Postings, Faculty, and more" }];
 
 /* ============================================================
@@ -30,7 +31,6 @@ let idleTimer = null;
 let slideTimer = null;
 let currentSlide = 0;
 let overlay, contentEl, dotsEl, actionEl;
-
 function buildSlideHTML(slide) {
   if (slide.type === "image") {
     return `<img class="ss-image" src="${slide.src}" alt="${slide.alt}">`;
@@ -59,6 +59,7 @@ function buildDots() {
     `<span class="ss-dot${i === currentSlide ? " active" : ""}"></span>`
   ).join("");
 }
+// function to handle idle screensaver logic
 
 function showSlide(index) {
   currentSlide = index;
